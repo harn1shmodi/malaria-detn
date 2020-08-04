@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>                
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+<div>
+  <h1>Malaria Detector</h1>
+</div> 
+<div class="container">
+<form action="/result" method="POST"  enctype="multipart/form-data"s>
+  <label for="myfile">Enter an image of stained "blood smear" of the patient:</label>
+  <br>
+  <br>
+  <input type="file" id="pic" name="pic" accept="image/*"><br><br>
+  <input type="submit"  value="Submit">
+</form>
+</div>
+</body>
+</html>
